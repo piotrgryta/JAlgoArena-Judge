@@ -12,7 +12,7 @@ class ProblemsClientForTests : ProblemsRepository {
 
     private val objectMapper = jacksonObjectMapper()
 
-    private fun problemsServiceUrl() = "https://jalgoarena-api.herokuapp.com/problems/api"
+    private fun problemsServiceUrl() = "https://jalgo-arena-api-pg.herokuapp.com/problems/api"
     private val CLIENT = OkHttpClient()
 
     override fun find(id: String): Problem {
