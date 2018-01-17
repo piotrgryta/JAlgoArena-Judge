@@ -19,7 +19,7 @@ class SubmissionsClient(
 ) : SubmissionsRepository {
 
     private fun submissionsServiceUrl(): String =
-            discoveryClient.getNextServerFromEureka("jalgoarena-submissions", false).homePageUrl
+            discoveryClient.getNextServerFromEureka("jalgo-arena-submissions-pg", false).homePageUrl
 
     override fun save(
             @RequestBody submission: Submission,
