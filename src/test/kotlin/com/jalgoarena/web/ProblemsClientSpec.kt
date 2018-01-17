@@ -56,7 +56,7 @@ class ProblemsClientSpec {
         val instanceInfo = mock(InstanceInfo::class.java)
 
         given(instanceInfo.homePageUrl).willReturn(PROBLEMS_SERVICE_DUMMY_URL)
-        given(discoveryClient.getNextServerFromEureka("jalgoarena-problems", false)).willReturn(instanceInfo)
+        given(discoveryClient.getNextServerFromEureka("jalgo-arena-problems-pg", false)).willReturn(instanceInfo)
     }
 
 
